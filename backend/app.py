@@ -35,7 +35,7 @@ if not API_KEY:
 genai.configure(api_key=API_KEY)
 
 # Path to character profiles
-CHARACTER_PROFILES_PATH = os.path.join("profiles", "characters.json")
+CHARACTER_PROFILES_PATH = os.path.join('backend',"profiles", "characters.json")
 
 # Load all character profiles
 def load_character_profiles():
