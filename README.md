@@ -1,4 +1,4 @@
-# AI Chat Project
+y# AI Chat Project
 
 This project is an interactive AI chat application that utilizes the Gemini API for dynamic conversational exchanges. The application is built with a Next.js frontend and a Python backend.
 
