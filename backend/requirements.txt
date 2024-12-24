@@ -3,3 +3,4 @@ uvicorn==0.22.0
 requests==2.31.0
 python-dotenv==1.0.0
 google-cloud==0.34.0
+google-generative-ai==0.1.0  # Add the appropriate google package
