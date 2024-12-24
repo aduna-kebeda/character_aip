@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import { AuthContext } from '../components/AuthProvider';
+// import { AuthContext } from '../components/AuthProvider';
 import { useContext } from 'react';
 
 const Register: React.FC = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { register } = useContext(AuthContext) as any;
+  // const { register } = useContext(AuthContext) as any;
   const router = useRouter();
 
   const handleRegister = async (e: React.FormEvent) => {
@@ -27,7 +27,7 @@ const Register: React.FC = () => {
 
       if (response.ok) {
         const data = await response.json();
-        register(data); // Save user data and token to context
+        // register(data); // Save user data and token to context
         router.push('/profile'); // Redirect to profile page
       } else {
         const errorData = await response.json();

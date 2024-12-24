@@ -7,7 +7,7 @@ const ChatComponent: React.FC = () => {
     const [character, setCharacter] = useState('default');
     const [messages, setMessages] = useState<{ sender: string; text: string }[]>([]);
     const [characters, setCharacters] = useState<string[]>([]);
-    const { setLoading, loading } = useContext(Context);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const loadCharacters = async () => {

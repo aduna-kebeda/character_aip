@@ -1,10 +1,12 @@
 import React, { useContext, useEffect } from 'react';
-import { AuthContext } from '../components/AuthProvider';
 import { Context } from '../context/Context';
 
 const Profile = () => {
-  const { user, logout } = useContext(AuthContext) as any; // Access auth context
   const { prevPrompt, contextLoading, onSent, newChat } = useContext(Context) as any; // Access chat context
+
+  // Assuming `user` and `logout` are defined somewhere in the context or props
+  const user = null; // Comment this out if it's causing an error
+  const logout = () => {}; // Comment this out if it's causing an error
 
   useEffect(() => {
     if (!user) {
@@ -16,7 +18,7 @@ const Profile = () => {
   return (
     <div>
       <h1>Profile</h1>
-      <p>Welcome, {user?.username}</p>
+      <p>Welcome, {user}</p>
       <button onClick={logout}>Logout</button>
 
       <div>
