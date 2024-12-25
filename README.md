@@ -1,4 +1,4 @@
-y# AI Chat Project
+# AI Chat Project
 
 This project is an interactive AI chat application that utilizes the Gemini API for dynamic conversational exchanges. The application is built with a Next.js frontend and a Python backend.
 
@@ -6,7 +6,7 @@ This project is an interactive AI chat application that utilizes the Gemini API 
 
 ```
 ai-chat-project
-├── backend          # Python backend for handling API requests
+├── backend              # Python backend for handling API requests
 │   ├── app.py      # Main entry point for the backend application
 │   ├── requirements.txt  # Python dependencies
 │   └── .env        # Environment variables for the backend
@@ -70,11 +70,3 @@ ai-chat-project
 
 - Open your browser and navigate to `http://localhost:3000` to access the chat application.
 - Interact with the AI character through the chat interface.
-
-## Contributing
-
-Feel free to submit issues or pull requests to improve the project. 
-
-## License
-
-This project is licensed under the MIT License.
